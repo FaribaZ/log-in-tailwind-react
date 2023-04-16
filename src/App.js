@@ -1,14 +1,19 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import "./App.css";
 import Header from "./component/header/Header";
-import Navigation from "./component/header/Navigation";
 import LoginForm from "./component/Login/LoginForm";
-
+import Welcome from "./component/UI/Welcome";
 function App() {
+  const [logIn, setLogIn] = useState(false);
+  const logInHandler = (email, password) => {
+    setLogIn(true);
+    alert("hey");
+  };
+
   return (
     <Fragment>
       <Header />
-      <LoginForm />
+      <main>{logIn ? <Welcome /> : <LoginForm onClick={logInHandler} />}</main>
     </Fragment>
   );
 }

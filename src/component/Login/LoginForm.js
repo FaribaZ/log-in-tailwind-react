@@ -1,6 +1,11 @@
+import Button from "../UI/Button";
+import Card from "../UI/Card";
 const LoginForm = () => {
+  const logInHandler = () => {
+    // console.log(props);
+  };
   return (
-    <div className="w-72 mx-auto mt-8 p-4 bg-white shadow-md rounded">
+    <Card>
       <form>
         <label className="bold">
           Email:
@@ -20,14 +25,9 @@ const LoginForm = () => {
             className="w-full border rounded border-gray-400 p-2 mb-2 "
           />
         </label>
-        <button
-          type="submit"
-          className="w-full bg-fuchsia-300 rounded py-2 px-4 hover:text-white mt-3"
-        >
-          Log in
-        </button>
+        <Button />
       </form>
-    </div>
+    </Card>
   );
 };
 
