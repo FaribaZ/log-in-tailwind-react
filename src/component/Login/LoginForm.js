@@ -1,8 +1,8 @@
 import Button from "../UI/Button";
 import Card from "../UI/Card";
-const LoginForm = () => {
+const LoginForm = (props) => {
   const logInHandler = () => {
-    // console.log(props);
+    props.onClick();
   };
   return (
     <Card>
@@ -25,7 +25,7 @@ const LoginForm = () => {
             className="w-full border rounded border-gray-400 p-2 mb-2 "
           />
         </label>
-        <Button />
+        <Button onClick={logInHandler} />
       </form>
     </Card>
   );

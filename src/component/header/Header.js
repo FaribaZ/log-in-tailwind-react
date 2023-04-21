@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Navigation from "./Navigation";
 
 const Header = () => {
   return (
@@ -9,7 +8,6 @@ const Header = () => {
           A Typical Page: Just as a practice👩‍💻
         </h1>
       </header>
-      <Navigation />
     </Fragment>
   );
 };

@@ -2,7 +2,7 @@ import Card from "./Card";
 const Welcome = () => {
   return (
     <Card>
-      <div>Welcome Back!</div>
+      <div className="text-3xl">Welcome Back 🎉</div>
     </Card>
   );
 };
